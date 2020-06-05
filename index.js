@@ -28,3 +28,6 @@ var uName = name.toUpperCase()
 var lName = name.toLowerCase()
 
 alert(name + ", " + uName + ", " + lName)
+
+// Print value to console
+console.log(name);
