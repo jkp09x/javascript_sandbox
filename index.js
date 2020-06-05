@@ -9,3 +9,7 @@ alert(age)
 var myAge = 32;
 var yourAge = prompt("Enter your age");
 alert("My age is " + myAge + " your age is " + yourAge + ".");
+
+// Count number of characters in the string
+var myName = "Jigar Kamlesh Patel";
+alert("My name contains " + myName.length + " characters");
