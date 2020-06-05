@@ -31,3 +31,13 @@ alert(name + ", " + uName + ", " + lName)
 
 // Print value to console
 console.log(name);
+
+// Functions with parameters
+function getMilk(money) {
+
+    var intBottles = Math.floor(money / 1.5);
+
+    console.log("You can get " + intBottles + " bottles of milk.");
+}
+
+getMilk(11)
