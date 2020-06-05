@@ -19,3 +19,12 @@ var userInput = "Jigar Patel is an Electrical Engineer who obtained his Bachelor
 var strSlice = 140;
 alert("You have entered " + userInput.length + " characters, you have " + (strSlice - userInput.length) + " characters left.");
 alert("First " + strSlice + " characters of the string are: " + userInput.slice(0,strSlice));
+
+// Change string case
+//   1. Upper Case -> toUpperCase()
+//   2. Lower Case -> toLowerCase()
+var name = "Jigar"
+var uName = name.toUpperCase()
+var lName = name.toLowerCase()
+
+alert(name + ", " + uName + ", " + lName)
