@@ -41,4 +41,8 @@ function getMilk(money) {
     return money % 1.5;
 }
 
-getMilk(11)
+console.log("Your change is $ " + getMilk(11))
+
+// Random Number Generator (Generates a 16-digit random number)
+// Number generated ranges between 0 - 0.9999999999999999 (16-9s)
+var randNum = Math.random();
