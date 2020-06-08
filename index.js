@@ -46,3 +46,41 @@ console.log("Your change is $ " + getMilk(11))
 // Random Number Generator (Generates a 16-digit random number)
 // Number generated ranges between 0 - 0.9999999999999999 (16-9s)
 var randNum = Math.random();
+
+// Checking equalities for if statements
+var numA = 123;
+var numB = "123";
+
+// This one cares about the data types and returns true only if value & data match
+if (numA === numB) {
+  console.log("A === B");
+}
+// This one doesn't care about the date type and will return yes
+if (numA == numB) {
+  console.log("A == B");
+}
+
+
+ // if-else if-else statements
+function isLeap(year) {
+    //Write your code here.
+    var divBy4 = (year % 4) === 0;
+    var divBy100 = (year % 100) === 0;
+    var divBy400 = (year % 400) === 0;
+    console.log(divBy4);
+    console.log(divBy100);
+    console.log(divBy400);
+
+    if (divBy400) {
+        return "Leap year.";
+    }else if (divBy100) {
+        return "Not leap year.";
+    }else if (divBy4) {
+        return "Leap year.";
+    } else {
+      return "Not leap year."
+    }
+}
+
+console.log(isLeap(2400));
+console.log(isLeap(2100));
