@@ -7,7 +7,9 @@ prompt("Enter your age: ");
 var age = prompt("Enter your age: ");
 alert(age)
 
-/ Prompt user for their age and then display their and my age
+  /
+  Prompt user
+for their age and then display their and my age
 var myAge = 32;
 var yourAge = prompt("Enter your age");
 alert("My age is " + myAge + " your age is " + yourAge + ".");
@@ -28,7 +30,7 @@ Northrop Grumman in Baltimore, Maryland."
 
 var strSlice = 140;
 alert("You have entered " + userInput.length + " characters, you have " + (strSlice - userInput.length) + " characters left.");
-alert("First " + strSlice + " characters of the string are: " + userInput.slice(0,strSlice));
+alert("First " + strSlice + " characters of the string are: " + userInput.slice(0, strSlice));
 
 /************************************************************/
 /******************** Change string case ********************/
@@ -51,10 +53,10 @@ console.log(name);
 /*******************************************************************/
 function getMilk(money) {
 
-    var intBottles = Math.floor(money / 1.5);
+  var intBottles = Math.floor(money / 1.5);
 
-    console.log("You can get " + intBottles + " bottles of milk.");
-    return money % 1.5;
+  console.log("You can get " + intBottles + " bottles of milk.");
+  return money % 1.5;
 }
 
 console.log("Your change is $ " + getMilk(11))
@@ -88,23 +90,23 @@ if (numA == numB) {
 /******************** if-else if-else statements ********************/
 /********************************************************************/
 function isLeap(year) {
-    //Write your code here.
-    var divBy4 = (year % 4) === 0;
-    var divBy100 = (year % 100) === 0;
-    var divBy400 = (year % 400) === 0;
-    console.log(divBy4);
-    console.log(divBy100);
-    console.log(divBy400);
+  //Write your code here.
+  var divBy4 = (year % 4) === 0;
+  var divBy100 = (year % 100) === 0;
+  var divBy400 = (year % 400) === 0;
+  console.log(divBy4);
+  console.log(divBy100);
+  console.log(divBy400);
 
-    if (divBy400) {
-        return "Leap year.";
-    }else if (divBy100) {
-        return "Not leap year.";
-    }else if (divBy4) {
-        return "Leap year.";
-    } else {
-      return "Not leap year."
-    }
+  if (divBy400) {
+    return "Leap year.";
+  } else if (divBy100) {
+    return "Not leap year.";
+  } else if (divBy4) {
+    return "Leap year.";
+  } else {
+    return "Not leap year."
+  }
 }
 
 console.log(isLeap(2400));
@@ -137,7 +139,7 @@ function fizzBuzzWhile(n) {
   var count = 1;
 
   while (count <= n) {
-    if ((count % 3)===0 && (count % 5)===0) {
+    if ((count % 3) === 0 && (count % 5) === 0) {
       output.push("FizzBuzz");
     } else if (count % 5 === 0) {
       output.push("Buzz");
