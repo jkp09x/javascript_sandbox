@@ -109,3 +109,46 @@ function isLeap(year) {
 
 console.log(isLeap(2400));
 console.log(isLeap(2100));
+
+/**************************************************************/
+/******************** Collections (Arrays) ********************/
+/**************************************************************/
+////////////////// Example 1
+var guestList = ["kamlesh", "anjana", "dushyant", "jigar"];
+var guestName = prompt("Enter your name");
+if (guestList.includes(guestName.toLowerCase())) {
+  console.log("Welcome to the party " + guestName + "!");
+} else {
+  console.log("Sorry, " + guestName + " you're not invited to this party.");
+}
+
+////////////////// Example 2
+/* Write a program that prints the numbers from 1 - 100. But for every multiple
+of 3 print "Fizz" for every numtiple of 5 print "Buzz" and for every number that
+is a multiple of 3 and 5 print "FizzBuzz". */
+
+////////////////// Example 2
+/* Write a program that prints the numbers from 1 - 100. But for every multiple of 3 print "Fizz"
+for every numtiple of 5 print "Buzz" and for every number that is a multiple of 3 and 5 print
+"FizzBuzz". */
+
+function fizzBuzzWhile(n) {
+  var output = []; // empty array
+  var count = 1;
+
+  while (count <= n) {
+    if ((count % 3)===0 && (count % 5)===0) {
+      output.push("FizzBuzz");
+    } else if (count % 5 === 0) {
+      output.push("Buzz");
+    } else if (count % 3 === 0) {
+      output.push("Fizz");
+    } else {
+      output.push(count);
+    }
+    count++;
+  }
+  console.log(output);
+}
+
+fizzBuzzWhile(100);
